@@ -1,0 +1,32 @@
+/* General Styles */
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #171719; 
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    background-color: rgb(164 ,192, 203);
+}
+
+.nav-list li a {
+    font-size: 1.4em;
+    color: #222222;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    padding: 15px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+}

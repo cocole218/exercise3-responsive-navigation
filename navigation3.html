@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation 3</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Example of Responsive Navigation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="nav">
+        
+        <a href="#" class="hamburger-icon">
+            <svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Menu</title>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Menu">
+                        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                        <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
+                    </g>
+                </g>
+            </svg>
+        </a>
+
+        <ol class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">Back</a></li>
+        </ol>
+
+        <div class="side-nav">
+            <li><a href="#" id="xbtn">X</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">Back</a></li>
+        </div>
+
+    </div>
+
+    <script>
+    // Create the variables for the elements
+    burgerIcon = document.querySelector('.hamburger-icon');
+    sideNav = document.querySelector('.side-nav');
+    xBtn = document.getElementById('xbtn');
+
+    // Function to open
+    function openSideNav() {
+        sideNav.style.width = '100vw';
+    }
+
+    // Function to close
+    function closeSideNav() {
+        sideNav.style.width = '0px';
+    }
+
+    // Event Listeners
+    burgerIcon.addEventListener('click', openSideNav);
+    xBtn.addEventListener('click', closeSideNav);
+    </script>
+
+</body>
+</html>

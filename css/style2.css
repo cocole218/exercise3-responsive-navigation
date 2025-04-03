@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #171719;
+}
+
+.nav {
+    background-color: rgb(164, 192, 203);
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: rgb(164, 192, 203);
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+}
+
+.nav-list.show {
+    display: block;
+}
+
+.nav-list li {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #171719;
+    font-size: 1.2em;
+}
+
+.nav-list a:hover {
+    color: rgb(104, 135, 148);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Example of Responsive Navigation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="hamburger-icon" onclick="toggleMenu()">
+            <svg width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Menu">
+                        <line x1="5" y1="7" x2="19" y2="7" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="5" y1="17" x2="19" y2="17" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
+                        <line x1="5" y1="12" x2="19" y2="12" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <ul class="nav-list">
+            <li><a href="navigation1.html">Navigation 1</a></li>
+            <li><a href="navigation2.html">Navigation 2</a></li>
+            <li><a href="navigation3.html">Navigation 3</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-list").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
